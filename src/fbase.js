@@ -9,13 +9,7 @@ const firebaseConfig = {
     // storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
     // messagingSenderId: process.env.REACT_APP_MESSAGIN_ID,
     // appId: process.env.REACT_APP_APP_ID
-    apiKey: "AIzaSyBM10rZX4IXxsXDGkeRsb-nCUM_jr4MGeI",
-    authDomain: "wittst-c418b.firebaseapp.com",
-    databaseURL: "https://wittst-c418b.firebaseio.com",
-    projectId: "wittst-c418b",
-    storageBucket: "wittst-c418b.appspot.com",
-    messagingSenderId: "204395477407",
-    appId: "1:204395477407:web:595529cf6bd0842573e5aa"
+    
   };
   firebase.initializeApp(firebaseConfig);
 
