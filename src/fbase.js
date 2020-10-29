@@ -9,10 +9,16 @@ const firebaseConfig = {
     storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
     messagingSenderId: process.env.REACT_APP_MESSAGIN_ID,
     appId: process.env.REACT_APP_APP_ID
+<<<<<<< HEAD
   
+=======
+>>>>>>> 0f9196530969dee657273619929e324d688be109
   };
   firebase.initializeApp(firebaseConfig);
 
   export const firebaseInstance = firebase;
   export const authService = firebase.auth();
+<<<<<<< HEAD
   export const dbService = firebase.firestore();
+=======
+>>>>>>> 0f9196530969dee657273619929e324d688be109
