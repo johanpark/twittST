@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { dbService } from 'fbase';
-
+import Ntwitt from "component/Ntwitt";
 
 const Home = ({userObj}) =>{ 
     const [JHtwitt, setJHtwitt] = useState("");
@@ -43,9 +43,11 @@ const Home = ({userObj}) =>{
       </form>
       <div>
         {JHtwitts.map((JHtwitt) => (
-          <div key={JHtwitt.id}>
-            <h4>{JHtwitt.text}</h4>
-          </div>
+          <Ntwitt 
+          key={JHtwitt.id} 
+          JHtwittObj={JHtwitt} 
+          isOwner ={JHtwitt.creatorId === userObj.uid} 
+          />
         ))}
       </div>
     </div>
