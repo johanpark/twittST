@@ -29,7 +29,9 @@ const Ntwitt = ({ JHtwittObj, isOwner}) =>{
   <div>
     {Editing ? (
       <>
-      <form onSubmit ={onSubmit}>
+     {isOwner && (
+       <>
+     <form onSubmit ={onSubmit}>
         <input 
         type ="text" 
         placeholder="Edit this" 
@@ -43,6 +45,8 @@ const Ntwitt = ({ JHtwittObj, isOwner}) =>{
         />
       </form>
       <button onClick ={toggleEditing}>Cancel</button>
+      </>
+      )}
       </>
     ) : (
       <>

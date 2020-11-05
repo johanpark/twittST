@@ -39,6 +39,7 @@ const Home = ({userObj}) =>{
           placeholder="What's on your mind?"
           maxLength={120}
         />
+        <input type ="file" accept ="image/*" />
         <input type="submit" value="JHtwitt" />
       </form>
       <div>
@@ -47,7 +48,7 @@ const Home = ({userObj}) =>{
           key={JHtwitt.id} 
           JHtwittObj={JHtwitt} 
           isOwner ={JHtwitt.creatorId === userObj.uid} 
-          />
+          /> //Create twitt Component
         ))}
       </div>
     </div>
